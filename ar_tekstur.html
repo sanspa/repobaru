@@ -11,10 +11,12 @@
                 <img id="world" src="./img/world.jpg">
             </a-assets>
             <a-marker preset="custom" type="pattern" url="./pattern/pattern-ASIA.patt">
-                <a-sphere material="src:#earth" position="0 1 0" animation="property:rotation;from:0 0 0; 
-                to: 0 0 360;             loop:true"></a-sphere>
-                <a-sphere material="src:#world" position="2 1 0" animation="property:rotation;from:0 0 0; 
-                to: 0 0 360;             loop:true"></a-sphere>
+                <a-sphere material="src:#earth" position="0 1 0" 
+                animation="property:rotation;from:0 0 0; 
+                to: 0 0 360;loop:true"></a-sphere>
+                <a-torus material="src:#world" position="2 1 0" 
+                animation="property:rotation;from:0 0 0; 
+                to: 0 0 360;loop:true"></a-torus>
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
